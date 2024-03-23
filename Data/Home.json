@@ -1,0 +1,14 @@
+{
+  
+    "name":"Regula Sharath",
+    "about":"hi",
+    "desc":"this is desc",
+    "experience": "2years",
+    "ToolBox": {
+      "Languages" : ["JavaScript & Jquery","HTML & CSS"],
+      "FrameworksLibraries" : ["React","Redux Tool Kit","Tailwind","NextJS"],
+      "DataBase": ["SQL Server","MongoDB"] 
+    }
+      
+    
+}

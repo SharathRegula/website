@@ -4,19 +4,29 @@ import ContactCard from "./ContactCard";
 import useMenu from "../contexts/menu";
 
 export default function Home(props) {
-  const [data, setData] = useState("");
+  const [data, setData] = useState({
+    name: "Regula Sharath",
+    about: "hi",
+    desc: "this is desc",
+    experience: "2years",
+    ToolBox: {
+      Languages: ["JavaScript & Jquery", "HTML & CSS"],
+      FrameworksLibraries: ["React", "Redux Tool Kit", "Tailwind", "NextJS"],
+      DataBase: ["SQL Server", "MongoDB"],
+    },
+  });
   const [contactinfo, setContactinfo] = useState(false);
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch("./../../Data/Home.json");
-        const rawdata = await response.json();
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     try {
+  //       const response = await fetch("./../../Data/Home.json");
+  //       const rawdata = await response.json();
 
-        setData(rawdata);
-      } catch (error) {}
-    };
-    fetchData();
-  }, []);
+  //       setData(rawdata);
+  //     } catch (error) {}
+  //   };
+  //   fetchData();
+  // }, []);
 
   return (
     <>

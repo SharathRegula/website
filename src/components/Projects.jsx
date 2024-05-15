@@ -5,14 +5,15 @@ import useMenu from "../contexts/menu";
 export default function Projects(props) {
   const [projects, setProjects] = useState([
     {
-      Title: "Project-1 Title Here",
-      TagLine: "Project-1 Tag Line Here",
+      Title: "Quiz",
+      TagLine: "Improve your knowledge by playing",
       Description:
-        "Project-1 A project description provides a comprehensive project overview, including its phases, processes, goals, and objectives. It addresses the problem that initiated the project and outlines the planned activities, timeline, and project location",
-      Link: "Link to Project",
-      Image: "https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg",
-      Technologies: ["Technology-1", "Technology-2", "Technology-3"],
-      Tools: ["Tool-1", "Tool-2", "Tool-3"],
+        "This is a project build by using React Library and MongoDb as Database",
+      Link: "https://quizmaster-olive.vercel.app/",
+      Image:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJr9P-7rx8ZcKwHdG03ALPlgjferIaWPGxHA&s",
+      Technologies: ["React", "Express", "MongoDb", "Tailwind"],
+      Tools: ["VSCode", "Vercel", "MongodbAtlas"],
     },
     {
       Title: "Project-2 Title Here",
@@ -75,6 +76,7 @@ export default function Projects(props) {
           </p>
         </div>
       )}
+      
     </>
   );
 }
